@@ -41,6 +41,6 @@ public class HashMapBasedStorage<Key,Value> implements Storage<Key,Value> {
     }
 
     private boolean isStorageFull(){
-        return map.size() == capacity;
+        return map.size() > capacity;
     }
 }
